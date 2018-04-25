@@ -2,4 +2,6 @@ java/target
 java/.settings
 java/.classpath
 java/.project
+java/.idea
+java/*.iml
 js/node_modules
