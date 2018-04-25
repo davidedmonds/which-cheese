@@ -1,2 +1,5 @@
 java/target
+java/.settings
+java/.classpath
+java/.project
 js/node_modules
