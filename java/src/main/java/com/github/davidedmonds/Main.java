@@ -1,12 +1,12 @@
 package com.github.davidedmonds;
 
+import com.github.davidedmonds.cheeses.CheeseList;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import java.nio.charset.Charset;
 import java.util.Spliterator;
 import java.util.Spliterators;
 import java.util.stream.StreamSupport;
-import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 
 public class Main {
@@ -19,5 +19,9 @@ public class Main {
                 .filter(cheese -> !cheese.matches("^Q\\d+"))
                 .sorted()
                 .forEach(System.out::println);
+
+        if ("Manchego Cheese".equals(CheeseList.MANCHEGO_CHEESE)) {
+            System.out.println("Nom nom nom generated code");
+        }
     }
 }
